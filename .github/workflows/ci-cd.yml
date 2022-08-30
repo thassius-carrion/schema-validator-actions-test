@@ -32,4 +32,4 @@ jobs:
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages
-          FOLDER: src/dist/open-delivery-api-schema-validator
+          FOLDER: src/dist/opendelivery-api-schema-validator
