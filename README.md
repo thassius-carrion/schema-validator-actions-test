@@ -1,1 +1,0 @@
-# opendelivery-api-schema-validator
