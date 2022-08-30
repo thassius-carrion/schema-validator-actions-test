@@ -1,0 +1,88 @@
+#container {
+  font-size: 1rem;
+  padding: 1rem 3rem;
+  display: flex;
+  flex-direction: column;
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+
+    .form-routes {
+      line-height: 1.55;
+      max-width: 25rem;
+    }
+
+    .form-types {
+      margin-top: .8rem;
+
+      mat-radio-button:nth-child(1) {
+        margin-right: 4.5rem;
+      }
+    }
+
+    .btn-validate {
+      align-self: flex-end;
+      background-color: #0d6366;
+      color: white;
+
+      width: 8rem;
+      padding: .1rem;
+
+      &:disabled {
+        background-color: rgba($color:#0d6366, $alpha:0.3);
+      }
+    }
+  }
+
+  .label {
+    text-transform: uppercase;
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+
+    .nameEndpointSelected {
+      margin-left: 2rem;
+      font-size: 0.7rem;
+    }
+  }
+
+  .result {
+    font-family: monospace;
+    white-space: pre;
+
+    padding: 1rem 2rem 2rem 1rem;
+    border: 2px solid rgba($color: #000000, $alpha: 0.2);
+    border-radius: 5px;
+    font-weight: 500;
+
+    .valid {
+      color: green;
+    }
+
+    .invalid {
+      margin: 1rem 0;
+      color: red;
+
+      span {
+        color: black;
+      }
+
+    }
+
+  }
+}
+
+.type-method {
+  padding: 0.2rem 0.2rem 0.2rem 0.4rem;
+  color: white;
+  margin-right: .6rem;
+}
+
+.type-method.GET {
+  background-color: green;
+}
+
+.type-method.POST {
+  background-color: rgb(46, 46, 177);
+}
